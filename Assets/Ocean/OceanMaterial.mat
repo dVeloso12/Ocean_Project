@@ -65,12 +65,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha_Clipping: 0.767
-    - _Amplitude: 1
+    - _Amplitude: 0.2
     - _Crest_Falloff: 1.45
     - _Crest_Offset: 0
     - _Crest_Size: 0.86
     - _Depth_Strength: 0.24
-    - _Edge_Hardeness: 10
+    - _Edge_Hardeness: 6.01
     - _Extra_Expersion: 0.21
     - _FoamDistance: 0.37
     - _Foam_Bands: 0
@@ -78,7 +78,7 @@ Material:
     - _Foam_Falloff: 1.62
     - _Foam_Removal: 0.86
     - _Foam_Width: 1
-    - _Frequency: 0.56
+    - _Frequency: 0.36
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Refraction_Strength: 2.76
@@ -88,8 +88,8 @@ Material:
     - _Secondary_Frequency: 0.3
     - _Secondary_Speed: 0.2
     - _Smoothness: 0.9
-    - _Speed: 0.52
-    - _Steepness: 1.42
+    - _Speed: 0.42
+    - _Steepness: 1.66
     - _Water_Edge_Opacity: 0.565
     - _Water_Opacity: 1
     m_Colors:
