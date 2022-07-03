@@ -24,6 +24,7 @@ public class WavesController : MonoBehaviour
 
 
     float lastHeight,LastWaveDistance,LastWaveSpeed,LastWaveInclination;
+
     private void Start() => getMaterials();
     void getMaterials()
     {
@@ -54,6 +55,10 @@ public class WavesController : MonoBehaviour
         {
             water.material.SetFloat(valueName, value);
         }
+    }
+    public void getWaveHeightEachPoint()
+    {
+     
     }
     #region Change Height Waves
     void Height_Waves()

@@ -65,7 +65,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha_Clipping: 0.767
-    - _Amplitude: 0.2
+    - _Amplitude: 0.5
     - _Crest_Falloff: 1.45
     - _Crest_Offset: 0
     - _Crest_Size: 0.86
