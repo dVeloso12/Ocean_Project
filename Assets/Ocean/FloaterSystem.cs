@@ -16,20 +16,63 @@ public class FloaterSystem : MonoBehaviour
     Rigidbody m_RigidBody;
     bool underwater;
     int floatersUnderwater;
+    Vector3 Position;
+    [SerializeField] WaveMeController cont;
+    [SerializeField] float offset = 0f;
+
+    float gameTime;
+    float waveHeight;
 
     void Start()
     {
         m_RigidBody = GetComponent<Rigidbody>();
+        
+        
     }
+    private void Awake()
+    {
+        gameTime += Time.time;
+    }
+    private void Update()
+    {
+        gameTime += Time.time;
+        
+        Position = transform.position;
+        waveHeight = cont.GetHeightME(new Vector2(Position.x, Position.z));
+        //Debug.Log(waveHeight);
+        transform.localPosition = new Vector3(transform.localPosition.x,waveHeight,transform.localPosition.z);
 
+    }
     private void FixedUpdate()
     {
-        ComplexObj();
 
+      //  SimpleObj_waves();
+        
+    }
+    void SimpleObj_waves()
+    {
+        //float difference = transform.position.y - waterHeight;  
+        float difference = transform.position.y - waveHeight;
+        if (difference < waveHeight)
+        {
+            m_RigidBody.AddForceAtPosition(Vector3.up * floatingPower * Mathf.Abs(difference), transform.position, ForceMode.Force);
+            if (!underwater)
+            {
+                underwater = true;
+                SwitchState(true);
+            }
+        }
+        else if (underwater)
+        {
+            underwater = false;
+            SwitchState(false);
+
+        }
     }
     void SimpleObj()
     {
-        float difference = transform.position.y - waterHeight;
+        //float difference = transform.position.y - waterHeight;
+        float difference = transform.position.y - waveHeight;
         if (difference < 0)
         {
             m_RigidBody.AddForceAtPosition(Vector3.up * floatingPower * Mathf.Abs(difference), transform.position, ForceMode.Force);
