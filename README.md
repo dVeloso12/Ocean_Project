@@ -1,9 +1,11 @@
 # Ocean_Project
 
-Criação de um Oceano via Shader Graph no Unity
 
 ## Todo :
 - [x] -Make Ocean
+            -Gerstner Waves 
+            -Shader Graph
 - [x] -Wave Controller
+        -Controlar o shader graph através de Script
 - [ ] -Buyoancy System
 - [ ] -Boat Controller
