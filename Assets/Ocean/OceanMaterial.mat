@@ -65,7 +65,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha_Clipping: 0.767
-    - _Amplitude: 0.5
+    - _Amplitude: 0.18
     - _Crest_Falloff: 1.45
     - _Crest_Offset: 0
     - _Crest_Size: 0.86
@@ -88,8 +88,8 @@ Material:
     - _Secondary_Frequency: 0.3
     - _Secondary_Speed: 0.2
     - _Smoothness: 0.9
-    - _Speed: 0.42
-    - _Steepness: 1.66
+    - _Speed: 0.9
+    - _Steepness: 7.17
     - _Water_Edge_Opacity: 0.565
     - _Water_Opacity: 1
     m_Colors:
